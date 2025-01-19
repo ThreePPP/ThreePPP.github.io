@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="index.js" defer></script>
+        <title>Main</title>
+    </head>
+    
+<body class="scroll-smooth">
+    <!-- Navbar-->
+    <nav class="bg-blue-600 text-white fixed top-0 w-full shadow-lg z-10">
+        <div class="container mx-auto flex justify-center items-center p-7">
+            <ul class="flex space-x-8 text-lg">
+                <li><a href="#home" class="hover:underline ">Home</a></li>
+                <li><a href="#about" class="hover:underline">About Me</a></li>
+                <li><a href="#work" class="hover:underline">My Work</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="h-screen bg-blue-600 text-white flex items-center justify-center">
+        <div class="text-center">
+            <img src="/image/profile.jpg" alt="Profile Picture" class="rounded-full mx-auto mb-4 h-40 w-40 object-cover">
+            <h1 class="text-3xl">Hello I'm paramet</h1>
+            <h1 class="text-6xl font-bold">Welcome to my Portfolio</h1>
+            <h1 class="text-6xl font-bold">Fontend web developer</h1>
+            <h1>Currently studying Bachelor's degree, Faculty of Science and Technology, Computer Science major</h1>
+            <h1 class="mb-4"> At RMUTP Rajamangala University of Technology Phra Nakhon</h1>
+            <a href="Resume.pdf" download="Paramet-Resume" class="bg-white text-blue-600 px-6 py-2 rounded-lg shadow-lg text-lg font-semibold hover:bg-gray-100 "
+            >Download Resume 
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="h-screen bg-gray-100 flex items-start justify-center pt-24">
+        <div class="container mx-auto text-center">
+            <h2 class="text-6xl font-bold mb-4">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Who I Am</h3>
+                    <p class="text-gray-700">Hello! I'm Paramet, a web developer. I am currently studying Bachelor's degree, Faculty of Science and Technology, Computer Science major
+                        at RMUTP Rajamangala University of Technology Phra Nakhon.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">My Skills</h3>
+                    <!-- Skills images -->
+                    <div class="grid grid-cols-4 gap-6 mb-4">
+                        <img src="/image/html.png" alt="HTML" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/css-3.png" alt="CSS" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/js.png" alt="JavaScript" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/web.png" alt="Web Design" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/nodejs.png" alt="Node.js" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/sql.png" alt="SQL" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/sql-server.png" alt="SQL Server" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/c.png" alt="C" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                    </div>
+                    <div class="grid grid-cols-4 gap-6">
+                        <img src="/image/nextjs.jpg" alt="Next.js" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                        <img src="/image/tailwind.png" alt="Tailwind CSS" class="h-12 w-12 object-contain border-2 p-2 shadow-md hover:scale-110 transform transition-all duration-300">
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg ">
+                    <h3 class="text-xl font-bold mb-4">My Project</h3>
+                    <div class="text-xl text-gray-700">
+                        <h1>
+                            Calculator
+                        </h1>
+                        <h1>
+                            To do list
+                        </h1>
+                        <h1>
+                            countdown timer
+                        </h1>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a href="#work" class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 hover:scale-110 transform transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                            See More
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- My work -->
+    <section id="work" class="h-screen bg-gray-200 flex items-center justify-center">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">My Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="cal.html" class="bg-blue-600 text-white p-6 rounded-lg shadow-lg hover:scale-110 transform transition-all duration-300">Calculator</a>
+                <a href="todo.html" class="bg-blue-600 text-white p-6 rounded-lg shadow-lg hover:scale-110 transform transition-all duration-300">To do list</a>
+                <a href="clock.html" class="bg-blue-600 text-white p-6 rounded-lg shadow-lg hover:scale-110 transform transition-all duration-300">countdown timer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="h-screen bg-gray-300 flex items-center justify-center">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">ติดต่อ</h2>
+            <p class="text-lg mb-4">คุณสามารถติดต่อฉันได้ตามช่องทางด้านล่าง</p>
+            <a href="mailto:paramet-pao@rmutp.ac.th" class="text-blue-600 underline">paramet-pao@rmutp.ac.th</a>
+            <p>Tel. 0968359147</p>
+            <p class="text-lg mb-8">ติดตามฉันทางโซเชียลมีเดียเพื่ออัปเดตเพิ่มเติม!</p>
+        
+            <form id="contactForm" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg font-semibold text-gray-700">ชื่อ</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg font-semibold text-gray-700">อีเมล</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg font-semibold text-gray-700">ข้อความ</label>
+                    <textarea id="message" name="message" class="w-full p-3 border border-gray-300 rounded-lg" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold hover:bg-blue-500 hover:scale-110 transform transition-all duration-300">ส่ง</button>
+                </div>
+            </form>
+    
+            <div id="thankYouMessage" class="hidden mt-6 text-xl font-semibold text-green-600">
+                <p>ขอบคุณที่ติดต่อเรา! แต่ระบบการส่งอีเมลไม่สามารถใช้งานได้ในขณะนี้ กรุณาส่งอีเมลไปยังอีเมลด้านบน ขอบคุณที่ติดต่อเรา.</p>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="bg-blue-600 text-white p-4">
+            <div class="container mx-auto items-center flex justify-between">
+                <p>&copy; 2025 My Website. All rights reserved.</p>
+                <a href="https://github.com/ThreePPP" target="_blank" class="underline hover:text-gray-300">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

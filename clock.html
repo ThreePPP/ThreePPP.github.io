@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+    <title>Advanced Countdown Timer</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-md">
+        <h1 class="text-2xl font-bold mb-4">Advanced Countdown Timer</h1>
+        <!-- เลือกเวลา -->
+        <div class="grid grid-cols-3 gap-4 mb-4">
+            <div>
+                <label for="hoursInput" class="block text-lg font-semibold mb-2">Hours:</label>
+                <input type="number" id="hoursInput" class="w-full p-2 border border-gray-300 rounded-lg text-center" placeholder="0" min="0">
+            </div>
+            <div>
+                <label for="minutesInput" class="block text-lg font-semibold mb-2">Minutes:</label>
+                <input type="number" id="minutesInput" class="w-full p-2 border border-gray-300 rounded-lg text-center" placeholder="0" min="0" max="59">
+            </div>
+            <div>
+                <label for="secondsInput" class="block text-lg font-semibold mb-2">Seconds:</label>
+                <input type="number" id="secondsInput" class="w-full p-2 border border-gray-300 rounded-lg text-center" placeholder="0" min="0" max="59">
+            </div>
+        </div>
+
+        <!-- ปุ่ม -->
+        <div class="flex justify-center gap-4">
+            <button id="startButton" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300">
+                Start Countdown
+            </button>
+            <button id="resetButton" class="bg-gray-600 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-gray-500 transition duration-300">
+                Reset
+            </button>
+        </div>
+
+        <!-- แสดงเวลาที่เหลือ -->
+        <h2 id="countdownDisplay" class="text-4xl font-bold mt-6 text-blue-600">00:00:00</h2>
+
+        <!-- แจ้งเตือน -->
+        <div id="alertBox" class="hidden mt-4 p-4 bg-green-500 text-white font-bold rounded-lg">
+            Time is up!
+        </div>
+        <audio id="alertSound" src="sound/beepbeep.wav" preload="auto"></audio>
+        <div class="mt-4">
+            <a href="index.html" class="text-blue-600 hover:underline flex justify-center">Go back</a>
+        </div>
+    </div>
+</body>
+</html>
